@@ -1,9 +1,5 @@
 const express = require('express')
-
 const app = express()
 
-app.get('/', (res, req) => {
-  res.send(`I honestly don't know what is going on, sorry gavin`)
-}
-
-app.listen(3000)
+app.use(express.static('public'))
+app.listen(3000, () => console.log('Server running on port 3000'))
