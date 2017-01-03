@@ -2,7 +2,7 @@ module.exports = {
   apps : [
     {
       name      : "EC2 Demo App",
-      script    : "index.js",
+      script    : "./kiwi start",
       env: {
         COMMON_VARIABLE: "true"
       },
